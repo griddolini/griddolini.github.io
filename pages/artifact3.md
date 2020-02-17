@@ -1,8 +1,7 @@
 ---
 layout: default
-title: Artifact 2
-description: Algorithms and Data Structures
+title: Artifact 3
+description: Databases
 ---
 
-# Artifact 2
-## Algorithms and Data Structures
+# Artifact 3 - Databases
