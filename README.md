@@ -1,7 +1,7 @@
 # Grid Sherman ePortfolio
 ## SNHU CS 499
 
-#[Artifact 1](_pages/portfolio.md)
+#[Artifact 1](artifact1.md)
 
 You can use the [editor on GitHub](https://github.com/griddolini/griddolini.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
