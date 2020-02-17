@@ -17,10 +17,10 @@ I'll be providing a professional self assessment first, followed by a video code
 ## Code Review
 
 ## Artifact 1
-[Artifact 1 Details](artifact1.md)
+[Artifact 1 Details](pages/artifact1.md)
 
 ## Artifact 2 
-[Artifact 2 Details](artifact2.md)
+[Artifact 2 Details](pages/artifact2.md)
 
 ## Artifact 3
-[Artifact 3 Details](artifact3.md)
+[Artifact 3 Details](pages/artifact3.md)
