@@ -1,1 +1,16 @@
 theme: jekyll-theme-merlot
+
+highlighter: rouge
+
+# Themes are encouraged to use these universal variables
+# so be sure to set them if your theme uses them.
+title : CS 499 Capstone
+author :
+  name : Grid Sherman
+  email : grid.sherman@snhu.edu
+  github : griddolini
+  twitter : nil
+  feedburner : nil
+
+# NOTE: Replacing this next line with your own URL
+production_url : https://griddolini.github.io/portfolio
