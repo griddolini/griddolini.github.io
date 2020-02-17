@@ -1,5 +1,4 @@
 # Grid Sherman ePortfolio
-## SNHU CS 499
 
 ### Intro
 My name is Grid Sherman, and I'm a Software Engineer with just over 4 years of experience. I will be graduating from Southern New Hampshire University (SNHU) in March, with a Bachelor's of Science in Computer Science. This ePortfolio serves to give a little background about me and what I'm interested in, as well as showing some of the work I've done on my own and with SNHU.
