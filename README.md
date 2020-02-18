@@ -15,6 +15,7 @@ I'll be providing a professional self assessment first, followed by a video code
 ## Showcase Overview
 
 ## Code Review
+<iframe width="1227" height="514" src="https://www.youtube.com/embed/2Z_dmXj3cAo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Artifact 1
 [Artifact 1 Details](pages/artifact1.md)
