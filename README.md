@@ -15,12 +15,13 @@ I'll be providing a professional self assessment first, followed by a video code
 ## Showcase Overview
 
 ## Code Review
+<iframe width="506" height="300" src="https://www.youtube.com/embed/2Z_dmXj3cAo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Artifact 1
-[Artifact 1 Details](artifact1.md)
+[Artifact 1 Details](pages/artifact1.md)
 
 ## Artifact 2 
-[Artifact 2 Details](artifact2.md)
+[Artifact 2 Details](pages/artifact2.md)
 
 ## Artifact 3
-[Artifact 3 Details](artifact3.md)
+[Artifact 3 Details](pages/artifact3.md)
