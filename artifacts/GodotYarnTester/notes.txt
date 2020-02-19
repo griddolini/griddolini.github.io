@@ -1,0 +1,39 @@
+
+Things that the user end gives a shit about:
+---
+Dialogue will happen
+Choices will be presented
+Events can be fired during said dialogue
+
+
+Endpoints that should be allowed :
+---
+do_next() : fire the next signal, which either a say() or a choice() or an event() that should already be subscribed to
+choice_response(string) : return a response to a question, as of now will go to a new node
+get_variable(key) : get a variable used in storyteller from outside a dialogue
+set_variable(key, value) : set a variable used in storyteller from outside a dialogue
+remove_variable(key) : remove a variable used in storyteller from outside a dialogue
+
+Things the dialogue will want to do :
+---
+
+if bool true/false, if number is less/greater/equal do speech, choices, etc
+<<if $var is (not) true/false/lol>>
+<<if $var /=/</>/<=/>=/!= 32>>
+
+set variable
+<<set $var true/false/32/abracradabra>>
+<<set $var (+/-)2>>
+
+fire an event, maybe with an argument. argument could be hard coded or another variable
+<<$eventname arg1 arg2 arg3>>
+
+<<if (not) visited>>: a built in variable, private to each yarn file. false for first interaction, then true after leaving.
+
+
+=	equals
+<	less than
+> 	greater than
+<=	lessthan/equalto
+>=	greaterthan/equalto
+!=	not equal

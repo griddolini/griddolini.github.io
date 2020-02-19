@@ -1,0 +1,128 @@
+title: Start
+tags: 
+colorID: 0
+position: 639,259
+---
+Welcome to the Dragontail Inn!
+This text game will test all the yarn features in a pre-packaged file.
+You go inside the inn. You have 100 [color=#ffff00]gold[/color].
+<<set gold 100>>
+What do you do next?
+[[MainBranch]]
+===
+title: MainBranch
+tags: 
+colorID: 0
+position: 1192,766
+---
+[[Talk to the Barkeep|Barkeep]]
+<<if lookedAround is false>>
+[[Look Around|LookAround]]
+<<else>>
+[[Talk to the Faeries|Faeries]]
+[[Talk to the Dwarves|Dwarves]]
+<<endif>>
+[[Leave the Inn|Leave]]
+===
+title: Barkeep
+tags: 
+colorID: 0
+position: 1706,732
+---
+[[What is this place?|WhereAmI]]
+<<if knows_menu is false>>
+[[What's there to drink?|Menu]]
+<<else>>
+[[Can I get a FairySoda?|RequestSoda]]
+[[Can I get a Dwarf's Boot?|RequestDBoot]]
+    <<if knows_secret_menu is true>>
+    [[Can I get DragonScale Ale?|RequestDragonAle]]
+    <<endif>>
+<<endif>>
+[[Who are you?|WhoIsBarkeep]]
+[[Nevermind.|MainBranch]]
+===
+title: Leave
+tags: 
+colorID: 0
+position: 875,249
+---
+You decide to leave the Dragontail Inn behind you.
+You got out with $gold gold coins!
+The End!
+<<do_end_cutscene_orsomething>>
+===
+title: LookAround
+tags: 
+colorID: 0
+position: 788,771
+---
+You look around the inn. The place is warm and comfortable, with a great fireplace in the middle of the room.
+There are four little faeries gambling up on a table in the corner of the Inn.
+Several dwarves are huddled around an arm wrestling match in the middle of the room.
+<<set lookedAround true>>
+[[MainBranch]]
+===
+title: WhereAmI
+tags: 
+colorID: 0
+position: 2087,711
+---
+You: What is this place?
+Barkeep: This is the Dragontail Inn. Warm drink and respite for weary travelers.
+Barkeep: Rooms are 50 [color=#ffff00]gold[/color] a night.
+[[Barkeep]]
+===
+title: Menu
+tags: 
+colorID: 0
+position: 1946,315
+---
+You: What's there to drink here?
+Barkeep: 
+===
+title: RequestSoda
+tags: 
+colorID: 0
+position: 1502,1113
+---
+Empty Text
+===
+title: RequestDBoot
+tags: 
+colorID: 0
+position: 1765,1108
+---
+Empty Text
+===
+title: RequestDragonAle
+tags: 
+colorID: 0
+position: 1996,1099
+---
+Empty Text
+===
+title: WhoIsBarkeep
+tags: 
+colorID: 0
+position: 2334,698
+---
+You: Who are you?
+Barkeep: Who the hell do I look like? I'm the barkeeper.
+Barkeep: Are you here to buy anything? If not, take your leave.
+[[Barkeep]]
+===
+title: Faeries
+tags: 
+colorID: 0
+position: 1308,323
+---
+Empty Text
+===
+title: Dwarves
+tags: 
+colorID: 0
+position: 1541,335
+---
+Empty Text
+===

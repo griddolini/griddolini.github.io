@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://singletons/Storyteller.gd" type="Script" id=1]
+[ext_resource path="res://singletons/Storykeeper.gd" type="Script" id=2]
+
+[node name="GlobalScene" type="Node"]
+
+[node name="Storyteller" type="Node" parent="."]
+script = ExtResource( 1 )
+
+[node name="Storykeeper" type="Node" parent="."]
+script = ExtResource( 2 )
