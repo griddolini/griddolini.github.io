@@ -1,4 +1,4 @@
-# Grid Sherman ePortfolio
+# Portfolio
 <img src="/assets/progr.jpg" width="500" style="margin-left:3px;">
 
 ## Intro
@@ -21,6 +21,8 @@ After interviewing with another company, I decided that I wanted to finish what 
 For my current job, and a version control course at SNHU, I have become extremely proficient at coordinating with other developers in a team environment, and utilizing powerful software like GIT, JIRA, and Confluence to collaborate on software development projects in an agile development cycle. Another course, Object Oriented Analysis and Design, has also focused on my understanding of UML and software design. I now understand detailed processes to fully flesh out and architect new software solutions before diving into programming. Even for agile development cycles that don’t focus on this in-depth design process, I now have a stronger insight into problems I should look out for and build around. This has also aided my ability to break down the architecture of software to someone who may not be as familiar with programming terminology. I also have experience with writing secure code. I have completed a secure coding course that walked us through the dangers, and solutions, to a multitude of tricky errors such as overflows and injection attacks. I am also scheduled to complete a Security + training camp in March.
 
 Another course, that I also have included as a demonstration in this portfolio, is the Client-Server Architecture course. Here we built a RESTful API that communicated to a NoSQL database and performed queries from URL requests. This covered a multitude of design paradigms and softwares, including Python Bottle servers and MongoDB. I also developed enhancements for this software of my own design, in the 3rd artifact of this portfolio. 
+
+<img src="/assets/godotyarn1.png"/>
 
 I think this serves as a good segue into what I consider one of my strong suites. My other artifacts, complementing my databases examples, are from a tool that I developed on my own using a middleware engine. Although the engine handled the low-level infrastructure, I have designed and implemented a full GUI that interacts with the user’s file system, parses a totally separate scripting language, and handles a variety of user inputs and interactions in a user-friendly display. In my personal work and professional career I have repeatedly been given a task or problem to solve, and have engineered a solution from the ground up to solve the problem in a robust, intuitive, and efficient way. I have recorded the details of this tool I designed between artifacts 1 and 2. All three of my artifacts show unique and important skills I possess, but I think the artifacts taken as a whole serve as a great example of the wide range of tools and methodologies I draw from in my solutions. I have working experience with many languages and tools, which gives me better insight into how to solve a problem in a fluid and sensible way.
 
