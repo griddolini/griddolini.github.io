@@ -1,5 +1,5 @@
 # Grid Sherman ePortfolio
-<img src="/assets/codegame.png"/>
+<img src="/assets/codegame.png" width="250" style="margin-left:125px;">
 
 ## Intro
 My name is Grid Sherman, and I'm a Software Engineer with just over 4 years of experience. I will be graduating from Southern New Hampshire University (SNHU) in March, with a Bachelor's of Science in Computer Science. This ePortfolio serves to give a little background about me and what I'm interested in, as well as showing some of the work I've done on my own and with SNHU.
