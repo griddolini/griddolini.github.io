@@ -29,7 +29,7 @@ I think this serves as a good segue into what I consider one of my strong suites
 As I have written previously, the 3 artifacts following will be specifically targeted to showcase my talent with software engineering, algorithms and data structures, and databases, respectively. I believe this work and the enhancements I have performed on them will back up my claims for experience I have in the software engineering field through school, work, and my personal hobbies.
 
 ## Code Review
-<iframe width="506" height="300" src="https://www.youtube.com/embed/2Z_dmXj3cAo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="600" height="300" src="https://www.youtube.com/embed/2Z_dmXj3cAo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Artifact 1
 This artifact is focusing on one aspect of my Godot Yarn Tester tool. This is a tool I’ve been developing over the past few months to test out dialogue scripts written for video games or other interactive media. It provides an intuitive user interface that allows you to test out these dialogue scripts before you even bother integrating them into their final purpose. The core application source code will be used across two of my artifacts. In this artifact, I’m focusing on a specific aspect of this tool: the parsing of yarn files and the logic behind adding new user commands.  
