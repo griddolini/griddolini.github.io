@@ -4,6 +4,10 @@ title: Artifact 2
 description: Algorithms and Data Structures
 ---
 
+[**Artifact 2 Code**](https://github.com/griddolini/griddolini.github.io/tree/master/artifacts/GodotYarnTester/singletons/Storyteller.gd)
+  
+ [**Godot Yarn Tester Full**](https://github.com/griddolini/griddolini.github.io/tree/master/artifacts/GodotYarnTester)
+ 
 # Artifact 2
 ## What is it?
 This artifact is focusing on one aspect of my Godot Yarn Tester tool. This is a tool I’ve been developing over the past few months to test out dialogue scripts written for video games or other interactive media. It provides an intuitive user interface that allows you to test out these dialogue scripts before you even bother integrating them into their final purpose. 
