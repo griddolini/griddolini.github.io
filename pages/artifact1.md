@@ -3,7 +3,7 @@ layout: default
 title: Artifact 1
 description: Software Design and Engineering
 ---
-[**Artifact 1 Code**](artifacts/GodotYarnTester/singletons)
+[**Artifact 1 Code**](https://github.com/griddolini/griddolini.github.io/tree/master/artifacts/GodotYarnTester/singletons)
 
 # Artifact 1 - Software Design and Engineering
 ## What is it?
