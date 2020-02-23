@@ -4,16 +4,34 @@ from bson import json_util
 from bson.son import SON
 from pymongo import MongoClient
 
+# Default initialization
 connection = MongoClient('localhost', 27017)
 db = connection['market']
 collection = db['stocks']
+# Value to save current db and collection names, since they can be set independently
+current_db = "market"
+current_collection = "stocks"
 
 # Configure connection to the database
-def connect_to_database(database, collect):
-  db = connection[database]
-  collection = db[collect]
+def connect_to_database(database):
+  # Save the most up-to-date db
+  current_db = database
+  db = connection[current_db]
+  collection = db[current_collection]
   # Error checking to inform if the connection was successful
-  if db != None and collection ! = None:
+  if db != None:
+    return true
+  else
+    return false
+  
+# Configure connection to the collection
+def connect_to_collection(collection):
+  # Save the most up-to-date db
+  current_collection = collection
+  db = connection[current_db]
+  collection = db[current_collection]
+  # Error checking to inform if the connection was successful
+  if collection != None:
     return true
   else
     return false
