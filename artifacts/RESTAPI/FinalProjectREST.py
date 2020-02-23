@@ -6,10 +6,44 @@ from datetime import datetime
 from bottle import route, run, request, abort
 from pymongo import MongoClient
 
+# Initialize default connection
 connection = MongoClient('localhost', 27017)
 db = connection['market']
 collection = db['stocks']
 
+# CHANGE DB PATH
+@route('/stocks/api/v1.0/changeDatabase/<database>', method='POST')
+def change_database(database):
+  connect_to_database(database)
+  if not database:
+    abort(400, 'No data received')
+  if result:
+    return "{result:\"Successfully changed database\"}"
+  else:
+    return "{result:\"Failed to change database\"}"
+  
+# CHANGE COLLECTION
+@route('/stocks/api/v1.0/changeCollection/<collection>', method='POST')
+def change_collection(collection):
+  connect_to_collection(collection)
+  if not collection:
+    abort(400, 'No data received')
+  if result:
+    return "{result:\"Successfully changed collection\"}"
+  else:
+    return "{result:\"Failed to change collection\"}"
+ 
+# CHANGE COLLECTION PATH
+@route('/stocks/api/v1.0/changeCollection/<collection>', method='POST')
+def change_database(database):
+  change_database(database)
+  if not database:
+    abort(400, 'No data received')
+  if result:
+    return "{result:\"Successfully changed database\"}"
+  else:
+    return "{result:\"Failed to change database\"}"
+  
 #CREATE PATH
 @route('/stocks/api/v1.0/createStock/<ticker>', method='POST')
 def post_create(ticker):
@@ -96,6 +130,7 @@ def delete_document(filterKey, filterValue):
     abort(400, str(te))
   return result
 
+# Run the server - remains running awaiting requests
 if __name__ == '__main__':
   #app.run(debug=True)
   run(host='localhost', port=8080)
