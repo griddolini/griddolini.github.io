@@ -8,6 +8,16 @@ connection = MongoClient('localhost', 27017)
 db = connection['market']
 collection = db['stocks']
 
+# Configure connection to the database
+def connect_to_database(database, collect):
+  db = connection[database]
+  collection = db[collect]
+  # Error checking to inform if the connection was successful
+  if db != None and collection ! = None:
+    return true
+  else
+    return false
+
 # Returns true or false based on insert success
 def create_document(document):
   result = None
@@ -48,6 +58,7 @@ def delete_document(filterKey, filterValue):
     abort(400, str(te))
   return result
 
+# Returns the 50 day range given a low and high value
 def find_50_day_range(low, high):
   pipeline = [
     { "$match": { "50-Day Simple Moving Average": {"$gt" : low, "$lt" : high} } }, 
@@ -55,9 +66,11 @@ def find_50_day_range(low, high):
   ]
   return list(collection.aggregate(pipeline))
 
+# Returns tickers given an industry string
 def find_tickers_by_industry(industry):
   return list(collection.find({"Industry":industry},{"Ticker":1,"_id":0}))
 
+# Returns outstanding shares in a given sector
 def find_outstanding_in_sector(sector):
   pipeline = [
     { "$match": {"Sector":sector} },
@@ -65,13 +78,16 @@ def find_outstanding_in_sector(sector):
   ]
   return list(collection.aggregate(pipeline))
 
+
+# Testing function to validate the creation functions
 def test2a():
   print("\n2A Test Case: Insert Key-Value Pairs")
   print("Testing insertion of this document:")
   createTest = {"Ticker":"Testing", "Sector":"Project"}
   print(createTest)
   print("Result: " + str(create_document(createTest)))
-  
+
+# Testing function for updating
 def test2b():
   print("\n2B Test Case: Updating Ticker Volume")
   print("Testing update of Ticker A with Volume of 550100")
@@ -83,8 +99,8 @@ def test2b():
   # Print out another read function to show it has changed
   print("The volume entry should now be 550100")
   print read_document("Ticker", "A")
-  pass
 
+# Testing function for deleting
 def test2c():
   print("\n2C Test Case: Deleting a document by Ticker")
   # Delete the entry we created for these tests
@@ -96,7 +112,6 @@ def test2c():
     print("We found something, delete failed!")
   else:
     print("There are no matching objects, delete successful")
-  pass
 
 test2a()
 
