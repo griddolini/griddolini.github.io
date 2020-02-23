@@ -66,6 +66,8 @@ func do_next(response = ""):
 				emit_signal("choices_presented", next_action["options_stack"])
 			"custom_command_fired":
 				emit_signal("custom_command_fired", next_action["command"], next_action["arguments"])
+			"variable_modified":
+				emit_signal("variable_modified", next_action["variable"], next_action["value"])
 	else:
 		# The dialogue has ended
 		if !has_signaled_end:
@@ -112,7 +114,7 @@ func logic(instruction):
 	var cmd_parts = instruction.strip_edges().split(" ")
 	match cmd_parts[0]:
 		"if":
-			if cmd_parts.size() < 3:
+			if cmd_parts.size() < 2:
 				send_parse_error("IF STATEMENT INCORRECT")
 				return
 			# We only need to compute this if we aren't within a failed if already
