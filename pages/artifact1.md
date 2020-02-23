@@ -5,7 +5,8 @@ description: Software Design and Engineering
 ---
 
 [**Artifact 1 Code**](https://github.com/griddolini/griddolini.github.io/tree/master/artifacts/GodotYarnTester/singletons/Storyteller.gd)
-[**Godot Yarn Tester Full**](https://github.com/griddolini/griddolini.github.io/tree/master/artifacts/GodotYarnTester)
+  
+ [**Godot Yarn Tester Full**](https://github.com/griddolini/griddolini.github.io/tree/master/artifacts/GodotYarnTester)
 
 # Artifact 1 - Software Design and Engineering
 ## What is it?
