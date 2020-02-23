@@ -4,6 +4,8 @@ title: Artifact 3
 description: Databases
 ---
 
+[**Artifact 3 Code**](https://github.com/griddolini/griddolini.github.io/tree/master/artifacts/RESTAPI)
+
 # Artifact 3 - Databases
 ## What is it?
 This artifact is from my CS 340 class - Client Server Architecture. In this class, we constructed a REST API  in Python that interfaced to a MongoDB server. The data we manipulated was a large dump of various stocks, prices, and statistics for each one indicated by a “ticker”. The REST API allows users to hit URL endpoints to perform operations on the data, as well as a handful of custom queries allowing easy access to specific kinds of data.
